@@ -1,0 +1,29 @@
+@mixin hovereffects {
+    background-color: $text-color;
+    box-shadow: 0rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+    color: $main-color;
+    transform: translateY(-0.7rem);
+}
+
+@mixin mybtn {
+    padding: 0.8rem 3.2rem;
+    background: $primary-color;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: $text-color;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 4.5rem;
+    outline: none;
+}
+
+@mixin content_center($flex_val) {
+    display: flex;
+    justify-content: center;
+    align-items: $flex-val;
+    flex-direction: column;
+}

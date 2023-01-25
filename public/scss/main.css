@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-family: 300;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.main_header {
+  width: 100vw;
+  line-height: 10rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) #0a183d;
+}
+.main_header .navbar-brand {
+  color: #fff;
+  -webkit-animation: music 1s linear infinite;
+          animation: music 1s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.main_header .navbar-brand .fa {
+  font-size: 4rem;
+}
+@-webkit-keyframes music {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
+@keyframes music {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
+.main_header .navbar-brand:hover {
+  filter: drop-shadow(0 1.5rem 1rem rgba(255, 255, 255, 0.5));
+}
+.main_header .navbar-nav {
+  padding-left: 15rem;
+}
+.main_header .navbar-nav .nav-item .nav-link {
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding-right: 3rem;
+}
+.main_header .navbar-nav .nav-item:last-child > .nav-link {
+  padding-right: 0%;
+}
+.main_header .navbar-brand:hover > .nav-link, .main_header .navbar-brand:hover, .main_header .navbar-brand:hover > .fa {
+  color: #b71540;
+}
+.main_header .my_btn {
+  padding: 0.8rem 3.2rem;
+  background: #b71540;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 4.5rem;
+  outline: none;
+}
+.main_header .my_btn:hover {
+  background-color: #fff;
+  box-shadow: 0rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  color: #0a183d;
+  transform: translateY(-0.7rem);
+}
+
+.header_hero {
+  width: 100%;
+  height: 80vh;
+  background: #0a183d;
+}
+.header_hero__text {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.header_hero__text h2 {
+  color: #fff;
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  line-height: 150%;
+  font-weight: 600;
+}
+.header_hero__text h2 span {
+  color: #b71540;
+  text-transform: capitalize;
+}
+.header_hero__text p {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+.header_hero__text .header_text__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.header_hero__text .header_text__btn a {
+  padding: 0.8rem 3.2rem;
+  background: #b71540;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 4.5rem;
+  outline: none;
+}
+.header_hero__text .header_text__btn a :hover {
+  background-color: #fff;
+  box-shadow: 0rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  color: #0a183d;
+  transform: translateY(-0.7rem);
+}
+.header_hero__text .header_text__btn #btn__2 {
+  margin-left: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.header_hero__text .header_text__btn #btn__2:hover {
+  background-color: #fff;
+  box-shadow: 0rem 1.5rem 2rem rgba(255, 255, 157, 0.4);
+  color: #0a183d;
+  transform: translateY(-0.7rem);
+}
+.header_hero__img {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  -webkit-animation: anime_hero 10s linear infinite alternate;
+          animation: anime_hero 10s linear infinite alternate;
+}
+@keyframes music {
+  from {
+    transform: scale(0.9deg);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.header_hero__img img {
+  filter: drop-shadow(0 1.5rem 1rem rgba(0, 0, 0, 0.8));
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .header_hero__text .header_text__btn {
+    display: block;
+    margin: 0 auto;
+  }
+  .header_hero__img {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

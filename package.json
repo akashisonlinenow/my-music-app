@@ -1,0 +1,14 @@
+{
+  "name": "mymusicapp",
+  "version": "1.0.0",
+  "description": "This is m music app made using express framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Akash Shridharan\"",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
